@@ -3,13 +3,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SmartUNIKOM360" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeScreenViewController" customModule="SmartUNIKOM360" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,29 +18,73 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQV-0d-RNJ" customClass="GVRPanoramaView">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logounikomkuning" translatesAutoresizingMaskIntoConstraints="NO" id="WZx-Ir-wvp">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="133" id="EvC-Rd-72D"/>
+                                            <constraint firstAttribute="width" secondItem="WZx-Ir-wvp" secondAttribute="height" multiplier="139:133" id="UFE-hu-R1I"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMART UNIKOM 360" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhF-Pe-yZQ">
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rK-cP-rvm">
+                                        <color key="backgroundColor" red="0.15686274509803921" green="0.58039215686274503" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="5rK-cP-rvm" secondAttribute="height" multiplier="213:44" id="rVJ-JX-rW6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Mulai Tour">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auditorium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O34-6C-YNR">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.047058823529411764" green="0.15686274509803921" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="O34-6C-YNR" firstAttribute="leading" secondItem="dQV-0d-RNJ" secondAttribute="leading" constant="141" id="2Nb-xJ-lAD"/>
+                                    <constraint firstItem="WZx-Ir-wvp" firstAttribute="centerX" secondItem="dQV-0d-RNJ" secondAttribute="centerX" id="5YS-GT-elG"/>
+                                    <constraint firstItem="uhF-Pe-yZQ" firstAttribute="top" secondItem="WZx-Ir-wvp" secondAttribute="bottom" constant="58" id="7XQ-F0-lcD"/>
+                                    <constraint firstAttribute="trailing" secondItem="5rK-cP-rvm" secondAttribute="trailing" constant="81" id="C2t-DD-DYs"/>
+                                    <constraint firstItem="uhF-Pe-yZQ" firstAttribute="leading" secondItem="dQV-0d-RNJ" secondAttribute="leading" constant="74" id="KIb-y6-G4z"/>
+                                    <constraint firstItem="5rK-cP-rvm" firstAttribute="leading" secondItem="dQV-0d-RNJ" secondAttribute="leading" constant="81" id="NhC-wf-2IC"/>
+                                    <constraint firstItem="WZx-Ir-wvp" firstAttribute="leading" secondItem="dQV-0d-RNJ" secondAttribute="leading" constant="118" id="OgK-Y5-S4x"/>
+                                    <constraint firstAttribute="trailing" secondItem="uhF-Pe-yZQ" secondAttribute="trailing" constant="75" id="Ozt-IL-4To"/>
+                                    <constraint firstAttribute="bottom" secondItem="O34-6C-YNR" secondAttribute="bottom" constant="57" id="bki-l3-uJC"/>
+                                    <constraint firstAttribute="trailing" secondItem="WZx-Ir-wvp" secondAttribute="trailing" constant="118" id="caB-oJ-xOe"/>
+                                    <constraint firstAttribute="trailing" secondItem="O34-6C-YNR" secondAttribute="trailing" constant="142" id="mdT-Vj-uXh"/>
+                                    <constraint firstItem="WZx-Ir-wvp" firstAttribute="top" secondItem="dQV-0d-RNJ" secondAttribute="top" constant="71" id="qWo-br-7XU"/>
+                                    <constraint firstItem="O34-6C-YNR" firstAttribute="top" secondItem="5rK-cP-rvm" secondAttribute="bottom" constant="161" id="sXo-8L-Dba"/>
+                                    <constraint firstItem="5rK-cP-rvm" firstAttribute="top" secondItem="uhF-Pe-yZQ" secondAttribute="bottom" constant="62" id="wgx-Zu-HSX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dQV-0d-RNJ" secondAttribute="trailing" id="hfa-7z-L4i"/>
+                            <constraint firstItem="dQV-0d-RNJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="huI-rb-GeB"/>
+                            <constraint firstItem="dQV-0d-RNJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="qzu-LU-H7t"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dQV-0d-RNJ" secondAttribute="bottom" id="tUM-ld-DSq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImageVRView" destination="dQV-0d-RNJ" id="Dzt-K3-89N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="nJi-Ll-jsX">
-            <objects>
-                <viewController id="vzS-Oe-N4G" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2Zo-Um-cz0"/>
-                        <viewControllerLayoutGuide type="bottom" id="PHR-P7-XOR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="GL4-PZ-52R">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="T2d-kh-vob" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="812" y="137"/>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logounikomkuning" width="116" height="115"/>
+    </resources>
 </document>

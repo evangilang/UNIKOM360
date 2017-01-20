@@ -12,6 +12,8 @@
 		08AD36C81E31BE8800D69A13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08AD36C61E31BE8800D69A13 /* Main.storyboard */; };
 		08AD36CA1E31BE8800D69A13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08AD36C91E31BE8800D69A13 /* Assets.xcassets */; };
 		08AD36CD1E31BE8800D69A13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08AD36CB1E31BE8800D69A13 /* LaunchScreen.storyboard */; };
+		08AD36D61E31C84E00D69A13 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD36D51E31C84E00D69A13 /* WelcomeScreenViewController.swift */; };
+		08AD36D91E32109100D69A13 /* auditorium.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08AD36D81E32109000D69A13 /* auditorium.jpg */; };
 		581419B68B49A5205736BE72 /* Pods_SmartUNIKOM360.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74D45A09F9B29DBAC598BE22 /* Pods_SmartUNIKOM360.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,9 @@
 		08AD36C91E31BE8800D69A13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08AD36CC1E31BE8800D69A13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08AD36CE1E31BE8900D69A13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08AD36D41E31C42B00D69A13 /* Smart UNIKOM 360-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smart UNIKOM 360-Bridging-Header.h"; sourceTree = "<group>"; };
+		08AD36D51E31C84E00D69A13 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
+		08AD36D81E32109000D69A13 /* auditorium.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = auditorium.jpg; sourceTree = "<group>"; };
 		53EC2927BEBD1996045960FC /* Pods-SmartUNIKOM360.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartUNIKOM360.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartUNIKOM360/Pods-SmartUNIKOM360.debug.xcconfig"; sourceTree = "<group>"; };
 		74D45A09F9B29DBAC598BE22 /* Pods_SmartUNIKOM360.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartUNIKOM360.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A281C18CABFCB8FB05E413BD /* Pods-SmartUNIKOM360.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartUNIKOM360.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartUNIKOM360/Pods-SmartUNIKOM360.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,14 +66,25 @@
 		08AD36C11E31BE8800D69A13 /* SmartUNIKOM360 */ = {
 			isa = PBXGroup;
 			children = (
+				08AD36D71E320F2C00D69A13 /* Image */,
 				08AD36C21E31BE8800D69A13 /* AppDelegate.swift */,
 				08AD36C41E31BE8800D69A13 /* ViewController.swift */,
 				08AD36C61E31BE8800D69A13 /* Main.storyboard */,
 				08AD36C91E31BE8800D69A13 /* Assets.xcassets */,
 				08AD36CB1E31BE8800D69A13 /* LaunchScreen.storyboard */,
 				08AD36CE1E31BE8900D69A13 /* Info.plist */,
+				08AD36D41E31C42B00D69A13 /* Smart UNIKOM 360-Bridging-Header.h */,
+				08AD36D51E31C84E00D69A13 /* WelcomeScreenViewController.swift */,
 			);
 			path = SmartUNIKOM360;
+			sourceTree = "<group>";
+		};
+		08AD36D71E320F2C00D69A13 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				08AD36D81E32109000D69A13 /* auditorium.jpg */,
+			);
+			name = Image;
 			sourceTree = "<group>";
 		};
 		DA4059003A5BDAEAA5FE9950 /* Frameworks */ = {
@@ -151,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08AD36D91E32109100D69A13 /* auditorium.jpg in Resources */,
 				08AD36CD1E31BE8800D69A13 /* LaunchScreen.storyboard in Resources */,
 				08AD36CA1E31BE8800D69A13 /* Assets.xcassets in Resources */,
 				08AD36C81E31BE8800D69A13 /* Main.storyboard in Resources */,
@@ -214,6 +231,7 @@
 			files = (
 				08AD36C51E31BE8800D69A13 /* ViewController.swift in Sources */,
 				08AD36C31E31BE8800D69A13 /* AppDelegate.swift in Sources */,
+				08AD36D61E31C84E00D69A13 /* WelcomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +358,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CodeLabs.SmartUNIKOM360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartUNIKOM360/Smart UNIKOM 360-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -354,6 +373,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CodeLabs.SmartUNIKOM360;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmartUNIKOM360/Smart UNIKOM 360-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -377,6 +397,7 @@
 				08AD36D31E31BE8900D69A13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -89,16 +89,76 @@
                             <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GkX-DL-NUo">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pilih Gedung" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1G-AT-gGd">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="sQI-ea-1dK"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KMw-e0-L2k">
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C9s-sl-otg">
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fotoGedungLama" translatesAutoresizingMaskIntoConstraints="NO" id="Oxv-r1-bE8"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gedung Lama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOQ-LA-z1b">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="Oxv-r1-bE8" firstAttribute="top" secondItem="C9s-sl-otg" secondAttribute="top" id="3tn-bB-tQU"/>
+                                                    <constraint firstItem="QOQ-LA-z1b" firstAttribute="centerY" secondItem="C9s-sl-otg" secondAttribute="centerY" id="FYq-GL-oJO"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Oxv-r1-bE8" secondAttribute="bottom" constant="1" id="I0u-7n-bxH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Oxv-r1-bE8" secondAttribute="trailing" id="KzV-x6-vrt"/>
+                                                    <constraint firstItem="QOQ-LA-z1b" firstAttribute="centerX" secondItem="Oxv-r1-bE8" secondAttribute="centerX" id="fYB-ZN-HDI"/>
+                                                    <constraint firstItem="Oxv-r1-bE8" firstAttribute="leading" secondItem="C9s-sl-otg" secondAttribute="leading" id="rye-Yh-HVM"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Tz-57-EfL">
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gedungBaru" translatesAutoresizingMaskIntoConstraints="NO" id="vD4-Ao-fy3"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gedung Baru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4l9-Po-6p5">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="vD4-Ao-fy3" firstAttribute="leading" secondItem="7Tz-57-EfL" secondAttribute="leading" id="7dv-v2-41X"/>
+                                                    <constraint firstItem="vD4-Ao-fy3" firstAttribute="height" secondItem="7Tz-57-EfL" secondAttribute="height" id="INZ-Iu-xlO"/>
+                                                    <constraint firstItem="4l9-Po-6p5" firstAttribute="centerY" secondItem="vD4-Ao-fy3" secondAttribute="centerY" id="KIA-4w-uz7"/>
+                                                    <constraint firstItem="4l9-Po-6p5" firstAttribute="centerX" secondItem="vD4-Ao-fy3" secondAttribute="centerX" id="Mrf-xc-ArL"/>
+                                                    <constraint firstItem="vD4-Ao-fy3" firstAttribute="width" secondItem="7Tz-57-EfL" secondAttribute="width" id="X3E-BX-4Je"/>
+                                                    <constraint firstItem="4l9-Po-6p5" firstAttribute="top" secondItem="7Tz-57-EfL" secondAttribute="top" constant="62" id="ZOl-uN-kjK"/>
+                                                    <constraint firstItem="vD4-Ao-fy3" firstAttribute="top" secondItem="7Tz-57-EfL" secondAttribute="top" id="ZmI-07-IUc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="vD4-Ao-fy3" secondAttribute="trailing" id="jPN-KK-p3G"/>
+                                                    <constraint firstAttribute="bottom" secondItem="vD4-Ao-fy3" secondAttribute="bottom" id="mce-fN-cKj"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gedung Lama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPO-SO-YYt">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="7Tz-57-EfL" firstAttribute="top" secondItem="KMw-e0-L2k" secondAttribute="top" constant="166" id="Okz-Fm-Il5"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="KMw-e0-L2k" firstAttribute="top" secondItem="H1G-AT-gGd" secondAttribute="bottom" constant="79.5" id="31d-3b-Dhg"/>
+                                    <constraint firstAttribute="bottom" secondItem="KMw-e0-L2k" secondAttribute="bottom" constant="161" id="JuL-Ck-ca2"/>
                                     <constraint firstItem="H1G-AT-gGd" firstAttribute="top" secondItem="GkX-DL-NUo" secondAttribute="top" constant="79" id="Uhn-pd-PQa"/>
                                     <constraint firstItem="H1G-AT-gGd" firstAttribute="leading" secondItem="GkX-DL-NUo" secondAttribute="leading" constant="60" id="WVH-S6-yfu"/>
                                     <constraint firstAttribute="trailing" secondItem="H1G-AT-gGd" secondAttribute="trailing" constant="60" id="ZDQ-gh-PV9"/>
+                                    <constraint firstAttribute="trailing" secondItem="KMw-e0-L2k" secondAttribute="trailing" constant="68" id="dj9-di-ZVl"/>
+                                    <constraint firstItem="KMw-e0-L2k" firstAttribute="leading" secondItem="GkX-DL-NUo" secondAttribute="leading" constant="67" id="fkR-Nr-Ct6"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -125,6 +185,8 @@
     </scenes>
     <resources>
         <image name="auditorium.jpg" width="900" height="450"/>
+        <image name="fotoGedungLama" width="280" height="180"/>
+        <image name="gedungBaru" width="280" height="180"/>
         <image name="logounikomkuning" width="116" height="115"/>
     </resources>
 </document>

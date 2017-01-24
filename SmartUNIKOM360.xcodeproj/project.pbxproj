@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		081C7B741E33131600ACEEA5 /* GedungViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081C7B731E33131600ACEEA5 /* GedungViewController.swift */; };
+		085FF6D11E3756D600BF2552 /* GedungLama.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085FF6D01E3756D600BF2552 /* GedungLama.swift */; };
+		085FF6D31E3758DC00BF2552 /* GedungBaru.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085FF6D21E3758DC00BF2552 /* GedungBaru.swift */; };
 		08AD36C31E31BE8800D69A13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD36C21E31BE8800D69A13 /* AppDelegate.swift */; };
 		08AD36C51E31BE8800D69A13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AD36C41E31BE8800D69A13 /* ViewController.swift */; };
 		08AD36C81E31BE8800D69A13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08AD36C61E31BE8800D69A13 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		081C7B731E33131600ACEEA5 /* GedungViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GedungViewController.swift; sourceTree = "<group>"; };
+		085FF6D01E3756D600BF2552 /* GedungLama.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GedungLama.swift; sourceTree = "<group>"; };
+		085FF6D21E3758DC00BF2552 /* GedungBaru.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GedungBaru.swift; sourceTree = "<group>"; };
 		08AD36BF1E31BE8800D69A13 /* SmartUNIKOM360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartUNIKOM360.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08AD36C21E31BE8800D69A13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08AD36C41E31BE8800D69A13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		085FF6CF1E3756A500BF2552 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				085FF6D01E3756D600BF2552 /* GedungLama.swift */,
+				085FF6D21E3758DC00BF2552 /* GedungBaru.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		08AD36B61E31BE8800D69A13 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +81,7 @@
 		08AD36C11E31BE8800D69A13 /* SmartUNIKOM360 */ = {
 			isa = PBXGroup;
 			children = (
+				085FF6CF1E3756A500BF2552 /* Model */,
 				08AD36D71E320F2C00D69A13 /* Image */,
 				08AD36C21E31BE8800D69A13 /* AppDelegate.swift */,
 				08AD36C41E31BE8800D69A13 /* ViewController.swift */,
@@ -233,7 +247,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				08AD36C51E31BE8800D69A13 /* ViewController.swift in Sources */,
+				085FF6D11E3756D600BF2552 /* GedungLama.swift in Sources */,
 				08AD36C31E31BE8800D69A13 /* AppDelegate.swift in Sources */,
+				085FF6D31E3758DC00BF2552 /* GedungBaru.swift in Sources */,
 				081C7B741E33131600ACEEA5 /* GedungViewController.swift in Sources */,
 				08AD36D61E31C84E00D69A13 /* WelcomeScreenViewController.swift in Sources */,
 			);
